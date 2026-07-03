@@ -1,0 +1,9 @@
+EU RH - versão estática em HTML e CSS
+
+Como abrir:
+1. Extraia esta pasta.
+2. Abra o arquivo index.html no navegador.
+3. As telas são demonstrativas e navegáveis.
+
+Observação:
+Esta versão não usa Flask, Python, banco de dados ou login real.

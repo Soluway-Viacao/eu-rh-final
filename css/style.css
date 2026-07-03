@@ -1,0 +1,473 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box
+}
+
+body {
+  font-family:Arial,
+sans-serif;
+  background:#f3f4f6;
+  color:#1f2937
+}
+
+a {
+  text-decoration:none
+}
+
+header {
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+  padding:18px 50px
+}
+
+.topo {
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:26px;
+  font-weight:bold;
+  color:#1f2937
+}
+
+.logo-box {
+  background:#ce622f;
+  color:#fff;
+  width:50px;
+  height:50px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold
+}
+
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:25px;
+  align-items:center
+}
+
+nav a {
+  color:#5b6475;
+  font-weight:600
+}
+
+.btn-nav {
+  background:#32329e;
+  color:white!important;
+  padding:11px 18px;
+  border-radius:10px
+}
+
+.container {
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px 80px
+}
+
+.hero {
+  background:linear-gradient(90deg,
+#32329e,
+#719ec4);
+  color:#fff;
+  padding:55px;
+  border-radius:22px;
+  margin-bottom:35px
+}
+
+.hero.center {
+  text-align:center;
+  padding:90px 30px
+}
+
+.hero h1 {
+  font-size:46px;
+  line-height:1.12;
+  margin-bottom:14px
+}
+
+.hero p {
+  font-size:19px;
+  line-height:1.55;
+  opacity:.95
+}
+
+.btn {
+  display:inline-block;
+  border:none;
+  border-radius:12px;
+  padding:14px 22px;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:16px
+}
+
+.btn-primary {
+  background:#32329e;
+  color:#fff
+}
+
+.btn-orange {
+  background:#ce622f;
+  color:#fff
+}
+
+.btn-light {
+  background:white;
+  color:#32329e
+}
+
+.btn-muted {
+  background:#e5e7eb;
+  color:#111827
+}
+
+.grid-3 {
+  display:grid;
+  grid-template-columns:repeat(3,
+1fr);
+  gap:22px
+}
+
+.grid-2 {
+  display:grid;
+  grid-template-columns:repeat(2,
+1fr);
+  gap:22px
+}
+
+.card,
+.box,
+.form-box {
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:20px;
+  padding:28px;
+  box-shadow:0 10px 30px rgba(0,
+0,
+0,
+.07)
+}
+
+.card h3 {
+  font-size:24px;
+  margin-bottom:10px
+}
+
+.card p,
+.text-muted {
+  color:#6b7280;
+  line-height:1.55
+}
+
+.section-title {
+  text-align:center;
+  font-size:38px;
+  margin:55px 0 28px
+}
+
+.stats {
+  display:grid;
+  grid-template-columns:repeat(4,
+1fr);
+  gap:18px;
+  margin-bottom:28px
+}
+
+.stat {
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  border:1px solid #e5e7eb
+}
+
+.stat strong {
+  display:block;
+  font-size:32px;
+  color:#32329e
+}
+
+.table {
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,
+0,
+0,
+.06)
+}
+
+.table th,
+.table td {
+  text-align:left;
+  padding:16px;
+  border-bottom:1px solid #e5e7eb
+}
+
+.table th {
+  background:#eef2ff;
+  color:#1f2937
+}
+
+.tag {
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#eef2ff;
+  color:#32329e;
+  font-weight:bold;
+  font-size:13px
+}
+
+.status {
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:8px;
+  font-weight:bold;
+  font-size:13px
+}
+
+.recebido {
+  background:#e0f2fe;
+  color:#075985
+}
+
+.analise {
+  background:#fef9c3;
+  color:#854d0e
+}
+
+.entrevista {
+  background:#ede9fe;
+  color:#5b21b6
+}
+
+.aprovado {
+  background:#dcfce7;
+  color:#166534
+}
+
+.reprovado {
+  background:#fee2e2;
+  color:#991b1b
+}
+
+.actions {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap
+}
+
+.form-title {
+  font-size:30px;
+  margin-bottom:10px
+}
+
+.grupo {
+  margin-bottom:18px
+}
+
+.grupo label {
+  display:block;
+  margin-bottom:8px;
+  font-weight:bold
+}
+
+.grupo input,
+.grupo textarea,
+.grupo select {
+  width:100%;
+  padding:14px 16px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  font-size:16px;
+  outline:none;
+  background:white
+}
+
+.grupo textarea {
+  min-height:130px;
+  resize:vertical
+}
+
+.duas-colunas {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px
+}
+
+.login-page {
+  min-height:100vh;
+  background:linear-gradient(135deg,
+#3538b8,
+#7aa6d1);
+  padding:40px 20px
+}
+
+.login-wrap {
+  max-width:1150px;
+  margin:60px auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center
+}
+
+.login-text {
+  color:white
+}
+
+.login-text h1 {
+  font-size:52px;
+  line-height:1.1;
+  margin-bottom:18px
+}
+
+.login-text p {
+  font-size:18px;
+  line-height:1.6
+}
+
+.login-box {
+  background:white;
+  border-radius:24px;
+  padding:34px;
+  box-shadow:0 24px 60px rgba(15,
+23,
+42,
+.18)
+}
+
+.benefit {
+  background:rgba(255,
+255,
+255,
+.12);
+  border:1px solid rgba(255,
+255,
+255,
+.18);
+  border-radius:16px;
+  padding:14px 18px;
+  margin-top:12px
+}
+
+.filters {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:25px
+}
+
+.filter {
+  padding:9px 16px;
+  border-radius:999px;
+  background:#f1f5f9;
+  color:#334155;
+  font-weight:700;
+  border:1px solid #e2e8f0
+}
+
+.filter.active {
+  background:#32329e;
+  color:white
+}
+
+.candidate {
+  display:grid;
+  grid-template-columns:80px 1fr auto;
+  gap:18px;
+  align-items:center
+}
+
+.avatar {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#e5e7eb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  font-weight:bold;
+  color:#32329e
+}
+
+.footer-note {
+  text-align:center;
+  color:#6b7280;
+  margin-top:35px
+}
+
+.alert {
+  background:#fff7ed;
+  border:1px solid #fed7aa;
+  color:#9a3412;
+  border-radius:14px;
+  padding:14px 18px;
+  margin-bottom:22px
+}
+
+.success-icon {
+  width:78px;
+  height:78px;
+  border-radius:50%;
+  background:#dcfce7;
+  color:#166534;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  margin:0 auto 18px
+}
+
+@media(max-width:900px) {
+  header {
+  padding:18px 20px
+}
+
+.topo {
+  flex-direction:column
+}
+
+nav ul {
+  flex-wrap:wrap;
+  justify-content:center
+}
+
+.grid-3,
+.grid-2,
+.stats,
+.login-wrap,
+.duas-colunas {
+  grid-template-columns:1fr
+}
+
+.hero h1,
+.login-text h1 {
+  font-size:36px
+}
+
+.candidate {
+  grid-template-columns:1fr
+}
+
+.table {
+  display:block;
+  overflow-x:auto
+}
+
+}
