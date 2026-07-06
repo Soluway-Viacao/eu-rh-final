@@ -471,3 +471,135 @@ nav ul {
 }
 
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.btn-voltar-soluway {
+  margin-left: auto;
+  margin-right: 24px;
+
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 10px 16px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid #c7d2fe;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-voltar-soluway:hover {
+  background: linear-gradient(135deg, #3730a3, #6d5dfc);
+  color: #ffffff;
+  border-color: transparent;
+}
+.btn-voltar-soluway {
+  font-size: 13px;
+  padding: 8px 12px;
+}
+.header {
+  width: 100%;
+  padding: 24px 8%;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: #1f2937;
+  flex-shrink: 0;
+}
+
+.logo span {
+  background: #d9652f;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 12px 10px;
+  border-radius: 14px;
+}
+
+.logo strong {
+  font-size: 30px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav a {
+  color: #5b6275;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.btn-voltar-soluway {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 10px 16px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid #c7d2fe;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-voltar-soluway:hover {
+  background: linear-gradient(135deg, #3730a3, #6d5dfc);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.btn-login,
+.nav .btn-login {
+  background: #3730a3;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
